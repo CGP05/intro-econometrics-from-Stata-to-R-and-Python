@@ -1,14 +1,16 @@
+#this file is not my work but im still keeping it here
+
 **Start with a fresh memory by wiping any data in the system**
 clear all
 
 **Import our data when its an excel file**
-import excel "C:\Users\koshala1\Downloads\tutorialdata-1.xlsx", sheet("data") firstrow
+import excel "C:\Users\Downloads\tutorialdata-1.xlsx", sheet("data") firstrow
 
 **Rename (and relocate if needed) the dataset we just imported**
-save "C:\Users\koshala1\Downloads\tutorial_1.dta", replace
+save "C:\Users\Downloads\tutorial_1.dta", replace
 
 **Tell stata what data set to use for the next set of code**
-use "C:\Users\koshala1\Downloads\tutorial_1.dta", clear
+use "C:\Users\Downloads\tutorial_1.dta", clear
 
 **Rename Variables**
 rename exp experience
@@ -45,6 +47,3 @@ integ k z
 **Use Stata to generate a new variable kprime for the derivative of k
 **Example Usage: **
 dydx k z, gen(kprime)
-
-
-
