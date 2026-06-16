@@ -1,4 +1,4 @@
-#this file is not my work but im still keeping it here
+#this file is not my work, copied from TA
 
 **Start with a fresh memory by wiping any data in the system**
 clear all
