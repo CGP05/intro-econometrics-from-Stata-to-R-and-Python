@@ -100,5 +100,3 @@ graph box Development_AI, over(income_ordered) ///
     ytitle("Development AI Score") ///
     title("Development AI by Income Level", size(medium)) ///
 	caption("Figure 4", position(6))
-
-
