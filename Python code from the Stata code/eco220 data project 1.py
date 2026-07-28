@@ -6,4 +6,4 @@ import matplotlib.pyplot as plt
 
 #Import our data when its an excel file
 with open("ECO220_DataProject_AI.xlsx", "r") as f:
-    df
+    df = pd.read_excel(f)
