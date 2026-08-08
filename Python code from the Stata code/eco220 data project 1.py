@@ -13,3 +13,13 @@ df = pd.read_stata(data_file_path)
 
 if __name__ == "__main__":
     print(df.describe())
+
+    # Stata equivalent: list Country GDP_PPP GDP_PPP_PER_CAPITA Overall_AI
+    cols = ['Country', 'GDP_PPP', 'GDP_PPP_PER_CAPITA', 'Overall_AI']
+
+    # Print all rows for these columns (like Stata's `list` which shows every observation)
+    # Temporarily allow pandas to print all rows; reset afterward to avoid overwhelming other outputs.
+    pd.set_option('display.max_rows', None)
+    print('\nSelected columns (Country, GDP_PPP, GDP_PPP_PER_CAPITA, Overall_AI):')
+    print(df[cols].to_string(index=False))
+    pd.reset_option('display.max_rows')
