@@ -1,15 +1,15 @@
-import pathlib
+from pathlib import Path
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 
-do_file_path = SCRIPT_DIR.parent / "original_stata" / "Stata Do-files" / "eco220 data project 1.do"
+data_file_path = SCRIPT_DIR.parent / "original_stata" / "Stata datasets" / "data project dataset.dta"
 
-#Import stata do file data, but use pathlib for cross platform
-with open("eco220 data project 1.do", "r") as f:
-    df = pd.read_stata(f)
+# Import Stata .dta data using pathlib for cross-platform paths
+# pandas accepts Path objects directly
+df = pd.read_stata(data_file_path)
 
-df.describe()
+if __name__ == "__main__":
+    print(df.describe())
