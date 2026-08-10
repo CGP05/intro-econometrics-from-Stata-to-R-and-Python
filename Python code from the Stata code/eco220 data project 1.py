@@ -11,8 +11,9 @@ data_file_path = SCRIPT_DIR.parent / "original_stata" / "Stata datasets" / "data
 # pandas accepts Path objects directly
 df = pd.read_stata(data_file_path)
 
-if __name__ == "__main__":
-    print(df.describe())
+def summarize(df):
+    return df.describe()
+
 
     # Stata equivalent: list Country GDP_PPP GDP_PPP_PER_CAPITA Overall_AI
     cols = ['Country', 'GDP_PPP', 'GDP_PPP_PER_CAPITA', 'Overall_AI']
