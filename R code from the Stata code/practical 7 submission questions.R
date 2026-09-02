@@ -1,0 +1,27 @@
+# Load necessary library
+library(ggplot2)
+
+# Set seed for reproducibility
+set.seed(3)
+
+# Roll a 6-sided die 10000 times
+die <- floor(runif(10000, 1, 7))  # Corrected the upper limit to 7
+
+# Create histogram
+ggplot(data = data.frame(die), aes(x = die, limits = c(1, 6))) +
+  geom_histogram(binwidth = 1, fill = "blue", color = "black") +
+  labs(title = "Random Coin Flips (10000 Obs)", x = "Outcome", y = "Percentage")
+
+# Set seed for a different result
+set.seed(7)
+
+# Roll a second 6-sided die 10000 times
+die_2 <- floor(runif(10000, 1, 7))  # Corrected the upper limit to 7
+
+# Add the results of two dice rolls
+dice <- die + die_2
+
+# Create histogram
+ggplot(data = data.frame(dice), aes(x = dice, limits = c(2, 12))) +
+  geom_histogram(binwidth = 1, fill = "green", color = "black") +
+  labs(title = "Random Dice Rolls (10000 Obs)", x = "Sum of Two Dice", y = "Percentage")
