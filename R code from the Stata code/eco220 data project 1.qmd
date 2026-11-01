@@ -1,0 +1,16 @@
+---
+format:
+html:
+toc: true
+code-fold: true
+pdf: default
+---
+
+```{r}
+library(tidyverse)
+library(readxl) library(patchwork)
+```
+
+```{r}
+df <- read_excel("ECO220_DataProject_AI.xlsx", sheet = data")
+```
