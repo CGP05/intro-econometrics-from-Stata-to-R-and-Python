@@ -1,1 +1,8 @@
-
+---
+title: "Lab4 for practical 7 in R"
+author: "Christian Pasquali" 
+date: "2026"
+format: pdf
+toc: true
+code-fold: true
+---

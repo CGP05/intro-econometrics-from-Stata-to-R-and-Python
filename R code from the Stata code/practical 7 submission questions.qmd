@@ -1,3 +1,12 @@
+---
+title: "practical 7 submission questions in R"
+author: "Christian Pasquali" 
+date: "2026"
+format: pdf
+toc: true
+code-fold: true
+---
+
 # Load necessary library
 
 library(ggplot2)

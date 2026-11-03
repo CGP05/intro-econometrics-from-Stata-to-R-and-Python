@@ -1,14 +1,16 @@
 ---
-format:
-html:
+title: "eco220 data project 1 in R "
+author: "Christian Pasquali" 
+date: "2026"
+format: pdf
 toc: true
 code-fold: true
-pdf: default
 ---
 
 ```{r}
 library(tidyverse)
-library(readxl) library(patchwork)
+library(readxl)
+library(patchwork)
 ```
 
 ```{r}

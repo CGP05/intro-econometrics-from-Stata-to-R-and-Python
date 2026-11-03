@@ -2,9 +2,14 @@
 title: "Stata to CSV Conversion File"
 author: "Jake Chanenson"
 date: "5/2/2024"
-output:
-  html_document: default
-  pdf_document: default
+format:
+  html:
+    toc: true
+    code-fold: true
+  pdf:
+    default:
+toc: true
+code-fold: true
 ---
 
 I've written this file to look in the same folder as the folder that the script is in and check to see if there are any stata files. If there are the script will read in the stata file and then write it to csv (which can be opened by Excel).

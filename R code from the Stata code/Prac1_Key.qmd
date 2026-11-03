@@ -1,1 +1,8 @@
-
+---
+title: "Prac1_Key in R"
+author: "Christian Pasquali" 
+date: "2026"
+format: pdf
+toc: true
+code-fold: true
+---
